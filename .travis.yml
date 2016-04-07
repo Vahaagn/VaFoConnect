@@ -1,2 +1,6 @@
 language: csharp
 solution: VaFoConnect.sln
+install:
+  - nuget restore VaFoConnect.sln
+script:
+  - xbuild /p:Configuration=Release VaFoConnect.sln /p:TargetFrameworkVersion="v4.5"
