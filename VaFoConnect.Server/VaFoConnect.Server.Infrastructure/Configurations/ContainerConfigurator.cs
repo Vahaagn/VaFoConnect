@@ -1,8 +1,11 @@
-﻿using VaFoConnect.Client.Infrastructure.Managers;
-using VaFoConnect.Client.Infrastructure.Managers.Interfaces;
+﻿using VaFoConnect.Core.Infrastructure.Providers;
 using VaFoConnect.Core.Infrastructure.Providers.Interfaces;
+using VaFoConnect.Server.Infrastructure.Managers;
+using VaFoConnect.Server.Infrastructure.Managers.Interfaces;
+using VaFoConnect.Server.Infrastructure.Services;
+using VaFoConnect.Server.Infrastructure.Services.Interfaces;
 
-namespace VaFoConnect.Client.Infrastructure
+namespace VaFoConnect.Server.Infrastructure.Configurations
 {
     public static class ContainerConfigurator
     {
@@ -11,7 +14,7 @@ namespace VaFoConnect.Client.Infrastructure
         /// </summary>
         public static IInstanceProvider Initialize(this IInstanceProvider provider)
         {
-            Core.Infrastructure.Configurations.ContainerConfigurator.Configure(provider);
+            //Core.Infrastructure.Configurations.ContainerConfigurator.Configure(provider);
             Configure(provider);
 
             return provider;
@@ -37,12 +40,11 @@ namespace VaFoConnect.Client.Infrastructure
         private static void RegisterManagers(IInstanceProvider instanceProvider)
         {
             instanceProvider.Assign<IClientManager, ClientManager>();
-            instanceProvider.Assign<IConnectionManager, ConnectionManager>();
         }
 
         private static void RegisterServices(IInstanceProvider instanceProvider)
         {
-            
+            instanceProvider.Assign<ISocketService, SocketService>();
         }
     }
 }

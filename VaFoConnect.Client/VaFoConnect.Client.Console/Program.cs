@@ -1,5 +1,5 @@
-﻿using VaFoConnect.Client.Infrastructure.Configurations;
-using VaFoConnect.Client.Infrastructure.Managers;
+﻿using VaFoConnect.Client.Infrastructure;
+using VaFoConnect.Client.Infrastructure.Managers.Interfaces;
 using VaFoConnect.Core.Infrastructure.Providers;
 
 namespace VaFoConnect.Client.Console
@@ -10,20 +10,14 @@ namespace VaFoConnect.Client.Console
         {
             System.Console.WriteLine("-----=====[ VaFoConnect ]=====-----");
             System.Console.WriteLine("-----=====[     v0.1    ]=====-----");
+            
+            var instanceProvider = InstanceProvider.GetInstanceProvider().Initialize();
 
-            Initialize();
-            var instanceProvider = InstanceProvider.GetInstanceProvider();
-
-            var clientManager = instanceProvider.GetInstance<ClientManager>();
+            var clientManager = instanceProvider.GetInstance<IClientManager>();
             clientManager.ShowClients();
             //TODO: Run ClientManager
 
             System.Console.ReadKey();
-        }
-
-        private static void Initialize()
-        {
-            InstanceProvider.GetInstanceProvider().Register(ContainerConfigurator.Configure);
         }
     }
 }

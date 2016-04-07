@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9FDC2954-7AEE-43C3-9ECD-85D000484C66}</ProjectGuid>
+    <ProjectGuid>{119554B4-B502-44B0-8B54-98BBF52A26EE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VaFoConnect.Core.Business</RootNamespace>
-    <AssemblyName>VaFoConnect.Core.Business</AssemblyName>
+    <RootNamespace>VaFoConnect.Server.Infrastructure</RootNamespace>
+    <AssemblyName>VaFoConnect.Server.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Client.cs" />
+    <Compile Include="Configurations\ContainerConfigurator.cs" />
+    <Compile Include="EventsArgs\ClientConnectedEventArgs.cs" />
+    <Compile Include="Managers\ClientManager.cs" />
+    <Compile Include="Managers\Interfaces\IClientManager.cs" />
+    <Compile Include="Models\Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Interfaces\ISocketService.cs" />
+    <Compile Include="Services\SocketService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Infrastructure\VaFoConnect.Core.csproj">
+      <Project>{4f773fdd-7980-4619-a458-688dd703dad8}</Project>
+      <Name>VaFoConnect.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Providers\Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

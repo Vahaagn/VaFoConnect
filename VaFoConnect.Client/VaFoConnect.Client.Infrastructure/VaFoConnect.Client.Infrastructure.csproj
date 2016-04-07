@@ -48,14 +48,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Infrastructure\VaFoConnect.Core.Infrastructure.csproj">
+    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Infrastructure\VaFoConnect.Core.csproj">
       <Project>{4f773fdd-7980-4619-a458-688dd703dad8}</Project>
-      <Name>VaFoConnect.Core.Infrastructure</Name>
+      <Name>VaFoConnect.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Business\VaFoConnect.Core.Business.csproj">
-      <Project>{9fdc2954-7aee-43c3-9ecd-85d000484c66}</Project>
-      <Name>VaFoConnect.Core.Business</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Providers\Interfaces\" />
+    <Folder Include="Services\Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

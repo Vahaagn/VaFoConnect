@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("VaFoConnect.Core.Application")]
+[assembly: AssemblyTitle("VaFoConnect.Server.Infrastructure")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("VaFoConnect.Core.Application")]
+[assembly: AssemblyProduct("VaFoConnect.Server.Infrastructure")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("88174a34-9938-44ca-afa3-472df12ab923")]
+[assembly: Guid("119554b4-b502-44b0-8b54-98bbf52a26ee")]
 
 // Version information for an assembly consists of the following four values:
 //

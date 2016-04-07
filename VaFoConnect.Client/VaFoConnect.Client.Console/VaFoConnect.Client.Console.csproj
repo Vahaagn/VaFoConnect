@@ -55,9 +55,9 @@
       <Project>{b6f2f959-9af5-433c-994e-e28cc07146bf}</Project>
       <Name>VaFoConnect.Client.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Infrastructure\VaFoConnect.Core.Infrastructure.csproj">
+    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Infrastructure\VaFoConnect.Core.csproj">
       <Project>{4f773fdd-7980-4619-a458-688dd703dad8}</Project>
-      <Name>VaFoConnect.Core.Infrastructure</Name>
+      <Name>VaFoConnect.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

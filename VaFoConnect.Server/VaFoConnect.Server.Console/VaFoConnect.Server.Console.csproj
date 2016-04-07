@@ -50,17 +50,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Application\VaFoConnect.Core.Application.csproj">
-      <Project>{88174a34-9938-44ca-afa3-472df12ab923}</Project>
-      <Name>VaFoConnect.Core.Application</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Infrastructure\VaFoConnect.Core.Infrastructure.csproj">
+    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Infrastructure\VaFoConnect.Core.csproj">
       <Project>{4f773fdd-7980-4619-a458-688dd703dad8}</Project>
-      <Name>VaFoConnect.Core.Infrastructure</Name>
+      <Name>VaFoConnect.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\VaFoConnect.Core\VaFoConnect.Core.Business\VaFoConnect.Core.Business.csproj">
-      <Project>{9fdc2954-7aee-43c3-9ecd-85d000484c66}</Project>
-      <Name>VaFoConnect.Core.Business</Name>
+    <ProjectReference Include="..\VaFoConnect.Server.Infrastructure\VaFoConnect.Server.Infrastructure.csproj">
+      <Project>{119554b4-b502-44b0-8b54-98bbf52a26ee}</Project>
+      <Name>VaFoConnect.Server.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,71 +3,57 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-
-# Folder VaFoConnect.Core
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VaFoConnect.Core", "VaFoConnect.Core", "{43C76CA5-16BD-4404-8EC0-0CAF1ABF2E09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaFoConnect.Core.Infrastructure", "VaFoConnect.Core\VaFoConnect.Core.Infrastructure\VaFoConnect.Core.Infrastructure.csproj", "{4F773FDD-7980-4619-A458-688DD703DAD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaFoConnect.Core", "VaFoConnect.Core\VaFoConnect.Core.Infrastructure\VaFoConnect.Core.csproj", "{4F773FDD-7980-4619-A458-688DD703DAD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaFoConnect.Core.Application", "VaFoConnect.Core\VaFoConnect.Core.Application\VaFoConnect.Core.Application.csproj", "{88174A34-9938-44CA-AFA3-472DF12AB923}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaFoConnect.Core.Business", "VaFoConnect.Core\VaFoConnect.Core.Business\VaFoConnect.Core.Business.csproj", "{9FDC2954-7AEE-43C3-9ECD-85D000484C66}"
-EndProject
-
-# Folder VaFoConnect.Client
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VaFoConnect.Client", "VaFoConnect.Client", "{CCFE3AF1-8E3F-46BF-ABF6-C02138C18819}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaFoConnect.Client.Infrastructure", "VaFoConnect.Client\VaFoConnect.Client.Infrastructure\VaFoConnect.Client.Infrastructure.csproj", "{B6F2F959-9AF5-433C-994E-E28CC07146BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaFoConnect.Client.Console", "VaFoConnect.Client\VaFoConnect.Client.Console\VaFoConnect.Client.Console.csproj", "{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2}"
 EndProject
-
-# Folder VaFoConnect.Server
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VaFoConnect.Server", "VaFoConnect.Server", "{82C8EC11-28D9-4683-B588-D7384DE5B72D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaFoConnect.Server.Console", "VaFoConnect.Server\VaFoConnect.Server.Console\VaFoConnect.Server.Console.csproj", "{418FF48F-46A0-4D21-9702-76753AFA6C29}"
 EndProject
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaFoConnect.Server.Infrastructure", "VaFoConnect.Server\VaFoConnect.Server.Infrastructure\VaFoConnect.Server.Infrastructure.csproj", "{119554B4-B502-44B0-8B54-98BBF52A26EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{418FF48F-46A0-4D21-9702-76753AFA6C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{418FF48F-46A0-4D21-9702-76753AFA6C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{418FF48F-46A0-4D21-9702-76753AFA6C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{418FF48F-46A0-4D21-9702-76753AFA6C29}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FDC2954-7AEE-43C3-9ECD-85D000484C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FDC2954-7AEE-43C3-9ECD-85D000484C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FDC2954-7AEE-43C3-9ECD-85D000484C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FDC2954-7AEE-43C3-9ECD-85D000484C66}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6F2F959-9AF5-433C-994E-E28CC07146BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6F2F959-9AF5-433C-994E-E28CC07146BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6F2F959-9AF5-433C-994E-E28CC07146BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6F2F959-9AF5-433C-994E-E28CC07146BF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4F773FDD-7980-4619-A458-688DD703DAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4F773FDD-7980-4619-A458-688DD703DAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F773FDD-7980-4619-A458-688DD703DAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F773FDD-7980-4619-A458-688DD703DAD8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{88174A34-9938-44CA-AFA3-472DF12AB923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88174A34-9938-44CA-AFA3-472DF12AB923}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88174A34-9938-44CA-AFA3-472DF12AB923}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88174A34-9938-44CA-AFA3-472DF12AB923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F2F959-9AF5-433C-994E-E28CC07146BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F2F959-9AF5-433C-994E-E28CC07146BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F2F959-9AF5-433C-994E-E28CC07146BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F2F959-9AF5-433C-994E-E28CC07146BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{418FF48F-46A0-4D21-9702-76753AFA6C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418FF48F-46A0-4D21-9702-76753AFA6C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418FF48F-46A0-4D21-9702-76753AFA6C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418FF48F-46A0-4D21-9702-76753AFA6C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119554B4-B502-44B0-8B54-98BBF52A26EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119554B4-B502-44B0-8B54-98BBF52A26EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119554B4-B502-44B0-8B54-98BBF52A26EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119554B4-B502-44B0-8B54-98BBF52A26EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{418FF48F-46A0-4D21-9702-76753AFA6C29} = {82C8EC11-28D9-4683-B588-D7384DE5B72D}
-		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2} = {CCFE3AF1-8E3F-46BF-ABF6-C02138C18819}
-		{9FDC2954-7AEE-43C3-9ECD-85D000484C66} = {43C76CA5-16BD-4404-8EC0-0CAF1ABF2E09}
-		{B6F2F959-9AF5-433C-994E-E28CC07146BF} = {CCFE3AF1-8E3F-46BF-ABF6-C02138C18819}
 		{4F773FDD-7980-4619-A458-688DD703DAD8} = {43C76CA5-16BD-4404-8EC0-0CAF1ABF2E09}
-		{88174A34-9938-44CA-AFA3-472DF12AB923} = {43C76CA5-16BD-4404-8EC0-0CAF1ABF2E09}
+		{B6F2F959-9AF5-433C-994E-E28CC07146BF} = {CCFE3AF1-8E3F-46BF-ABF6-C02138C18819}
+		{CF9D98A2-897D-422F-BE7C-3E86CF4F7BE2} = {CCFE3AF1-8E3F-46BF-ABF6-C02138C18819}
+		{418FF48F-46A0-4D21-9702-76753AFA6C29} = {82C8EC11-28D9-4683-B588-D7384DE5B72D}
+		{119554B4-B502-44B0-8B54-98BBF52A26EE} = {82C8EC11-28D9-4683-B588-D7384DE5B72D}
 	EndGlobalSection
 EndGlobal
