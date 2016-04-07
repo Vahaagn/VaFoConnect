@@ -2,6 +2,7 @@
 using System.Net.Sockets;
 using System.Threading.Tasks;
 using VaFoConnect.Core.Infrastructure.Entities.Interfaces;
+using VaFoConnect.Core.Infrastructure.Providers.Interfaces;
 using VaFoConnect.Server.Infrastructure.EventsArgs;
 using VaFoConnect.Server.Infrastructure.Managers.Interfaces;
 using VaFoConnect.Server.Infrastructure.Models;
@@ -23,11 +24,11 @@ namespace VaFoConnect.Server.Infrastructure.Services
         #endregion
 
         #region [ Constructors ]
-        public SocketService(ISettings settings, IClientManager clientManager)
+        public SocketService(ISettingsProvider settingsProvider, IClientManager clientManager)
         {
-            _settings = settings;
+            _settings = settingsProvider.Load().GetSettings();
             _clientManager = clientManager;
-            _tcpListener = TcpListener.Create(_settings.Port);
+            _tcpListener = new TcpListener(_settings.IpAddress, _settings.Port);
         }
         #endregion
         
@@ -69,8 +70,8 @@ namespace VaFoConnect.Server.Infrastructure.Services
             {
                 while (_canListen)
                 {
-                    var socket = _tcpListener.AcceptSocket();
-                    var client = new Client(socket);
+                    var tcpClient = _tcpListener.AcceptTcpClient();
+                    var client = new Client(tcpClient);
                     _clientManager.AddClient(client);
 
                     ClientConnected?.Invoke(this, new ClientConnectedEventArgs(client));

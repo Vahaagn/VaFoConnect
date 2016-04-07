@@ -5,7 +5,7 @@ namespace VaFoConnect.Core.Infrastructure.Providers.Interfaces
     public interface ISettingsProvider
     {
         ISettings GetSettings();
-        void Load();
+        ISettingsProvider Load();
         bool Save();
     }
 }

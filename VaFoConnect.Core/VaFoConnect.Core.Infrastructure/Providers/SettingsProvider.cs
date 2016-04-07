@@ -18,12 +18,14 @@ namespace VaFoConnect.Core.Infrastructure.Providers
             return _settings;
         }
 
-        public void Load()
+        public ISettingsProvider Load()
         {
             var settings = (Settings) _settings;
 
-            settings.IpAddress = "127.0.0.1";
+            settings.Ip = "127.0.0.1";
             settings.Port = 5000;
+
+            return this;
         }
 
         public bool Save()

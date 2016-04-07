@@ -1,8 +1,11 @@
-﻿namespace VaFoConnect.Core.Infrastructure.Entities.Interfaces
+﻿using System.Net;
+
+namespace VaFoConnect.Core.Infrastructure.Entities.Interfaces
 {
     public interface ISettings
     {
-        string IpAddress { get; }
+        string Ip { get; }
+        IPAddress IpAddress { get; }
         int Port { get; }
     }
 }
